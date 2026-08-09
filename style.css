@@ -1,0 +1,719 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050d18;
+    color: #e8f0ff;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 50% -20%, #1767c8 0%, transparent 45%),
+        linear-gradient(135deg, #020812, #063b91);
+    color: white;
+    text-align: center;
+    padding: 70px 20px 65px;
+    border-bottom: 2px solid #1671df;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(38, 120, 223, 0.08);
+    border-radius: 50%;
+    top: -350px;
+    right: -150px;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-shadow: 0 0 25px rgba(70, 150, 255, 0.45);
+}
+
+header h2 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        rgba(101, 168, 255, 0.2),
+        rgba(255, 255, 255, 0.06)
+    );
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid rgba(101, 168, 255, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at 50% 0%, #123f78, transparent 55%),
+        linear-gradient(180deg, #071426, #050d18);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(7, 87, 201, 0.08);
+    left: -150px;
+    bottom: -200px;
+}
+
+.hero h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    position: relative;
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 720px;
+    line-height: 1.8;
+    padding: 0;
+    color: #b9c9df;
+}
+
+.badge {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #ef3340, #c92535);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.35);
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.buttons {
+    position: relative;
+    margin-top: 32px;
+}
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 26px;
+    margin: 6px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.25s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.buttons a:hover {
+    transform: translateY(-3px);
+}
+
+.call {
+    background: linear-gradient(135deg, #0757c9, #126de0);
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #20b858, #159447);
+}
+
+.directions {
+    background: linear-gradient(135deg, #e63946, #c92f3b);
+}
+
+/* =========================================================
+   PANASONIC SERVICES
+========================================================= */
+
+.services {
+    padding: 85px 20px;
+    text-align: center;
+    background:
+        linear-gradient(180deg, #0b1d33, #08182a);
+    border-top: 1px solid #16385f;
+    border-bottom: 1px solid #16385f;
+}
+
+.services h2 {
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 38px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #142f4d, #0b2037);
+    padding: 25px 17px;
+    border-radius: 17px;
+    border: 1px solid #234a75;
+    border-top: 4px solid #1261c9;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    transition: 0.25s ease;
+}
+
+.service:hover {
+    transform: translateY(-7px);
+    border-color: #4389d8;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
+}
+
+.service img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 17px;
+    border-radius: 10px;
+}
+
+.service h3 {
+    color: #65a8ff;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b9c9df;
+    padding: 0;
+}
+
+/* =========================================================
+   OTHER BRANDS
+========================================================= */
+
+.brands-seo {
+    padding: 90px 20px;
+    text-align: center;
+    background:
+        radial-gradient(circle at top, #12345f, transparent 55%),
+        #071426;
+    border-bottom: 1px solid #1d4772;
+}
+
+.brands-seo h2 {
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.brands-seo > p {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    color: #aebfd4;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.brand-seo-content {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+}
+
+.brand-service {
+    background: linear-gradient(145deg, #142f4d, #0c2138);
+    border: 1px solid #28527c;
+    border-radius: 17px;
+    padding: 30px 23px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    transition: 0.25s ease;
+}
+
+.brand-service:hover {
+    transform: translateY(-6px);
+    border-color: #4389d8;
+}
+
+.brand-service h3 {
+    color: #65a8ff;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.brand-service p {
+    color: #c4d2e2;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.brand-list {
+    max-width: 1000px;
+    margin: 45px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.brand-list span {
+    background: #102841;
+    color: #dbe9fa;
+    border: 1px solid #28527c;
+    padding: 11px 19px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.brand-list span:hover {
+    background: #0757c9;
+    border-color: #65a8ff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.trust {
+    background:
+        radial-gradient(circle at 50% 0%, #0b56ad, transparent 55%),
+        linear-gradient(135deg, #063b91, #02152d);
+    color: white;
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.trust h2 {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 34px;
+}
+
+.trust p {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    max-width: 650px;
+    margin: 13px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    backdrop-filter: blur(5px);
+}
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+
+.reviews {
+    padding: 90px 20px;
+    text-align: center;
+    background:
+        radial-gradient(circle at top, #12345f, transparent 60%),
+        #071426;
+    border-top: 1px solid #1d4772;
+    border-bottom: 1px solid #1d4772;
+}
+
+.reviews h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.reviews-subtitle {
+    color: #9fb6d1;
+    font-size: 17px;
+    margin: 0 auto 45px;
+    max-width: 650px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.review-card {
+    position: relative;
+    background: linear-gradient(145deg, #142f4d, #0d2138);
+    border: 1px solid #28527c;
+    border-radius: 18px;
+    padding: 32px 25px;
+    text-align: left;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: 0.25s ease;
+}
+
+.review-card::before {
+    content: "“";
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 70px;
+    color: rgba(101, 168, 255, 0.12);
+    font-family: Georgia, serif;
+}
+
+.review-card:hover {
+    transform: translateY(-7px);
+    border-color: #4389d8;
+}
+
+.stars {
+    color: #ffd43b;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.review-card p {
+    color: #d1deed;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.review-card h3 {
+    color: #65a8ff;
+    font-size: 15px;
+    border-top: 1px solid #294967;
+    padding-top: 15px;
+}
+
+.review-button {
+    display: inline-flex;
+    margin-top: 42px;
+    padding: 15px 28px;
+    background: linear-gradient(135deg, #0757c9, #126de0);
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    box-shadow: 0 7px 20px rgba(7, 87, 201, 0.3);
+    transition: 0.25s ease;
+}
+
+.review-button:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background:
+        linear-gradient(180deg, #091b30, #050d18);
+    padding: 85px 20px;
+    text-align: center;
+    border-top: 1px solid #16385f;
+}
+
+.contact h2 {
+    color: #65a8ff;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.contact p {
+    margin: 12px auto;
+    font-size: 17px;
+    max-width: 750px;
+    line-height: 1.7;
+    padding: 0;
+    color: #b9c9df;
+}
+
+.contact-box {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 38px 25px;
+    background: linear-gradient(145deg, #142f4d, #0c2138);
+    border-radius: 18px;
+    border: 1px solid #234a75;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.contact-box h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #31557d;
+    border-radius: 8px;
+    background: #091b30;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-box input:focus,
+.contact-box select:focus,
+.contact-box textarea:focus {
+    border-color: #4389d8;
+    box-shadow: 0 0 0 2px rgba(67, 137, 216, 0.15);
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
+    color: #8fa5bf;
+}
+
+.contact-box select {
+    color: #cbd9eb;
+}
+
+.contact-box textarea {
+    resize: vertical;
+}
+
+.contact-box button {
+    background: linear-gradient(135deg, #20b858, #159447);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-box button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   OPENING HOURS
+========================================================= */
+
+.hours {
+    margin-top: 25px !important;
+    padding: 18px !important;
+    background: #122945;
+    border-radius: 10px;
+    border-left: 5px solid #1261c9;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #020914;
+    color: #91a5bd;
+    text-align: center;
+    padding: 32px 20px;
+    line-height: 1.7;
+    border-top: 1px solid #16385f;
+}
+
+/* =========================================================
+   FLOATING BUTTONS
+========================================================= */
+
+.floating-whatsapp,
+.floating-location,
+.floating-call {
+    position: fixed;
+    right: 20px;
+    width: 58px;
+    height: 58px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 27px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+    transition: 0.2s ease;
+}
+
+.floating-whatsapp {
+    bottom: 20px;
+    background: #20b858;
+}
+
+.floating-location {
+    bottom: 90px;
+    background: #e63946;
+}
+
+.floating-call {
+    bottom: 160px;
+    background: #0757c9;
+}
+
+.floating-whatsapp:hover {
+    background: #159447;
+    transform: scale(1.08);
+}
+
+.floating-location:hover {
+    background: #c92f3b;
+    transform: scale(1.08);
+}
+
+.floating-call:hover {
+    background: #126de0;
+    transform: scale(1.08);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 48px 15px;
+    }
+
+    header h1 {
+        font-size: 31px;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    .hero {
+        padding: 65px 18px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .buttons a {
+        display: block;
+        max-width: 290px;
+        margin: 9px auto;
+    }
+
+    .services,
+    .brands-seo,
+    .trust,
+    .reviews,
+    .contact {
+        padding: 65px 18px;
+    }
+
+    .services h2,
+    .brands-seo h2,
+    .trust h2,
+    .reviews h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-seo-content {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .brand-list {
+        gap: 9px;
+    }
+
+    .brand-list span {
+        font-size: 14px;
+        padding: 9px 14px;
+    }
+
+    .floating-whatsapp,
+    .floating-location,
+    .floating-call {
+        width: 52px;
+        height: 52px;
+        right: 15px;
+    }
+
+    .floating-whatsapp {
+        bottom: 15px;
+    }
+
+    .floating-location {
+        bottom: 77px;
+    }
+
+    .floating-call {
+        bottom: 139px;
+    }
+}
